@@ -62,7 +62,7 @@ class Gallery extends Component {
                     <a
                         className="image fit thumb"
                         href={obj.src}
-                        onClick={(e) => this.openLightbox(i, e)}
+
                     >
                         <img src={obj.thumbnail} />
                     </a>
@@ -87,10 +87,10 @@ class Gallery extends Component {
                     currentImage={this.state.currentImage}
                     images={this.props.images}
                     isOpen={this.state.lightboxIsOpen}
-                    onClickImage={this.handleClickImage}
-                    onClickNext={this.gotoNext}
-                    onClickPrev={this.gotoPrevious}
-                    onClickThumbnail={this.gotoImage}
+
+
+
+                  
                     onClose={this.closeLightbox}
                 />
             </div>
