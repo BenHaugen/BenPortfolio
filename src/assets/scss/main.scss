@@ -40,7 +40,7 @@
 		)
 	));
 
-	$size-header-width: 35%;
+	$size-header-width: 24%;
 	$size-header-pad: 4em;
 
 /* Basic */
@@ -88,6 +88,7 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		font-size: 1.4em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -99,6 +100,7 @@
 		a {
 			color: inherit;
 			text-decoration: none;
+			font-size: 1.5em;
 		}
 	}
 
@@ -464,7 +466,7 @@
 			width: 100%;
 		}
 
-		
+
 
 		img {
 			border-radius: _size(border-radius);
@@ -842,10 +844,10 @@
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 3em 0;
 
 		.image {
-			margin: 0 0 (_size(element-margin) * 0.75) 0;
+			margin: 0 0 (_size(element-margin) * 1) 0;
 		}
 
 		h3 {
@@ -854,7 +856,7 @@
 		}
 
 		p {
-			font-size: 0.8em;
+			font-size: 1.1em;
 			line-height: 1.5em;
 			margin: 0;
 		}
@@ -955,7 +957,7 @@
 
 	#main {
 		margin-left: $size-header-width;
-		max-width: 50em + $size-header-pad;
+		// max-width: 20em + $size-header-pad;
 		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 		width: calc(100% - #{$size-header-width});
 
@@ -1162,7 +1164,7 @@
 
 	@include breakpoint(large) {
 
-		$size-header-width: 30%;
+		$size-header-width: 20%;
 		$size-header-pad: 3em;
 
 		/* Header */
@@ -1199,7 +1201,7 @@
 			#main {
 				margin-left: $size-header-width;
 				max-width: none;
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+				padding: ($size-header-pad * 1) $size-header-pad $size-header-pad $size-header-pad;
 				width: calc(100% - #{$size-header-width});
 			}
 

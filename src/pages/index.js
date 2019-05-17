@@ -23,7 +23,7 @@ import favicon from '../../src/assets/images/favicon-32x32.png'
 
 const DEFAULT_IMAGES = [
     { id: '3', src: full03, thumbnail: thumb03, caption: <a href="https://benhaugen.github.io/pickupfrontend/" target="_blank">PickUp</a>, description: 'Built with React.js, Ruby on Rails and PostgreSQL, PickUp allows users to search their area for a variety of pick-up sports games. Users can also organize their own pick-up games.'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: <a href="https://pro-fitness.herokuapp.com/" target="_blank">Pro Fitness</a>, description: 'Created primarily with Ruby on Rails, Pro Fitness allows users to input past workouts, look at their progressions and get inspiration on workouts to do in the future.'},
+    { id: '4', src: full04, thumbnail: thumb04, caption: <a href="https://pro-fitness.herokuapp.com/" target="_blank">Pro Fitness</a>, description: 'Created primarily with Ruby on Rails and Bulma CSS Framework, Pro Fitness allows users to input past workouts, look at their progressions and get inspiration on workouts to do in the future.'},
     { id: '5', src: full05, thumbnail: thumb05, caption: <a href="https://basketballcards.herokuapp.com/" target="_blank">Basketball Cards</a>, description: 'This React.js application allows users to view current and former NBA players, add them to their roster and see if their team can outscore some of the greatest historical teams in NBA history!'},
     { id: '6', src: full06, thumbnail: thumb06, caption: <a href="https://eventmatcher2019.herokuapp.com/" target="_blank">EventMatchr</a>, description: 'Using vanilla JavaScript and TicketMasters API, EventMatchr allows users to look for events in their area, save favorited events and purchase tickets through TicketMaster affiliates.'}
 ];
@@ -94,7 +94,7 @@ class HomeIndex extends React.Component {
       >
         <html lang="en" />
       </Helmet>
-                
+
 
                 <div id="main">
 
