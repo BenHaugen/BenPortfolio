@@ -19,6 +19,7 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 import ben from '../assets/images/ben3.jpg'
+import favicon from '../../src/assets/images/favicon-32x32.png'
 
 const DEFAULT_IMAGES = [
     { id: '3', src: full03, thumbnail: thumb03, caption: <a href="https://benhaugen.github.io/pickupfrontend/" target="_blank">PickUp</a>, description: 'Built with React.js, Ruby on Rails and PostgreSQL, PickUp allows users to search their area for a variety of pick-up sports games. Users can also organize their own pick-up games.'},
@@ -74,15 +75,26 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
+        const siteTitle = "Ben Haugen Portfolio"
         const siteDescription = "Site description"
 
         return (
             <Layout>
-                <Helmet>
-                        <title>{siteTitle}</title>
-                        <meta name="description" content={siteDescription} />
-                </Helmet>
+            <Helmet
+        title={siteTitle}
+        meta name="description" content={siteDescription}
+        link={[
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: `${favicon}`,
+          },
+        ]}
+      >
+        <html lang="en" />
+      </Helmet>
+                
 
                 <div id="main">
 
